@@ -1,0 +1,6 @@
+{
+  "name": "TrackPulse",
+  "description": "Tactical real-time package and delivery tracking with live courier GPS telemetry, route progression, and delivery management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

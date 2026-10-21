@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface": "#0f131d", "primary-container": "#4d8eff", "on-background": "#dfe2f1", "on-secondary-fixed-variant": "#005236", "outline": "#8c909f", "secondary-fixed": "#6ffbbe", "tertiary-fixed-dim": "#ffb95f", "on-tertiary": "#472a00", "surface-container-high": "#262a35", "secondary-container": "#00a572", "error-container": "#93000a", "on-primary-fixed-variant": "#004395", "on-secondary-fixed": "#002113", "on-error-container": "#ffdad6", "on-secondary-container": "#00311f", "surface-container-highest": "#313540", "primary-fixed-dim": "#adc6ff", "tertiary": "#ffb95f", "surface-dim": "#0f131d", "surface-container-low": "#171b26", "tertiary-fixed": "#ffddb8", "error": "#ffb4ab", "secondary": "#4edea3", "on-primary-container": "#00285d", "on-surface-variant": "#c2c6d6", "on-surface": "#dfe2f1", "on-tertiary-container": "#3e2400", "surface-container-lowest": "#0a0e18", "on-primary": "#002e6a", "surface-tint": "#adc6ff", "surface-bright": "#353944", "outline-variant": "#424754", "inverse-on-surface": "#2c303b", "primary": "#adc6ff", "primary-fixed": "#d8e2ff", "on-error": "#690005", "inverse-primary": "#005ac2", "inverse-surface": "#dfe2f1", "surface-container": "#1c1f2a", "background": "#0f131d", "on-secondary": "#003824", "secondary-fixed-dim": "#4edea3", "on-tertiary-fixed": "#2a1700", "tertiary-container": "ca8100", "surface-variant": "#313540", "on-tertiary-fixed-variant": "#653e00", "on-primary-fixed": "#001a42" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "0.75rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter": "1rem", "space-xl": "2rem", "space-sm": "0.5rem", "margin": "1.25rem", "space-md": "1rem", "margin-mobile": "1rem" }, fontFamily: { "headline-md": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"], "label-caps": ["Inter"], "headline-xl": ["Plus Jakarta Sans"], "label-telemetry": ["JetBrains Mono"], "body-md": ["Inter"], "body-lg": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"] }, fontSize: { "headline-md": ["20px", { lineHeight: "26px", letterSpacing: "-0.015em", fontWeight: "700" }], "label-sm": ["10px", { lineHeight: "12px", letterSpacing: "0.04em", fontWeight: "600" }], "headline-xl-mobile": ["26px", { lineHeight: "32px", letterSpacing: "-0.025em", fontWeight: "800" }], "label-caps": ["11px", { lineHeight: "14px", letterSpacing: "0.08em", fontWeight: "700" }], "headline-xl": ["32px", { lineHeight: "40px", letterSpacing: "-0.03em", fontWeight: "800" }], "label-telemetry": ["13px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "body-lg": ["16px", { lineHeight: "24px", letterSpacing: "-0.005em", fontWeight: "400" }], "headline-sm": ["16px", { lineHeight: "22px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-lg": ["24px", { lineHeight: "30px", letterSpacing: "-0.02em", fontWeight: "700" }], "body-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "400" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; background-color: #0f131d; } body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased min-h-screen flex flex-col font-body-md"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs min-w-0"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:text-primary transition-colors -ml-2" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="TrackPulse Brand Logo" class="h-7 w-auto object-contain shrink-0 hidden sm:block" src="https://lh3.googleusercontent.com/aida/AEtjO1VdEgERirUTUCDV044SeSiRnis4FSjHPMy0txr1C-bVAUZZqp9aJtt8WzksOIOo8a25K5IGfpE6MTFDD3dC-PxUR7RKB9J4FCr3wrzzin75ZnvYtm4CPUZQlkcaJNAINSAsHTBmnBAdwaIRKShoj4D4-80wHyTpOlC5LJXWXqNhzxBTrKNUwdKG4rGvw5v3kB95Zk-8_amPxrhpXvEpdrw8ut4JFHbtnK2ouQXNAul6PLpVY6LKziogWNr4"/><div class="flex flex-col truncate"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate leading-tight">Package Details</span><span class="font-label-caps text-label-caps text-on-surface-variant truncate uppercase leading-tight">TrackPulse</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Share or details" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">share</span></button><button aria-label="User Profile" class="w-11 h-11 flex items-center justify-center" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvXIiks4D043PJW61EtuSxyZZGEC01oGCFMUo_7nUFC6sLwQrQOIjnofCV5_F7z3Q2pG06s_jO0ZGUWWxtHSxuRhnH_hyLPVlbaclBQ2bTIup79mXJ1bej_H0fU3SSDLKfmuHD-BbwT42Gx8ImzRMthDzlVHXP7LJP-Anb2TfmpAtA8NCJGaiYE0t4ai-Gp9dsIis9E7aLckE8-rQ7HH5A_R7Spv7zbIwKRl7UnhLh5T2i-BMpNTjshg"/></button></div></div></header><main class="flex-1 flex flex-col w-full px-gutter pt-16 pb-safe bg-surface min-h-[calc(100vh-4rem)]"><div class="flex flex-col w-full pb-24 space-y-space-md">
+<!-- Top Summary Card with Tactile Obsidian Glass Depth -->
+<div class="relative bg-surface-container rounded-xl p-space-md shadow-xl overflow-hidden">
+<!-- Ambient Status Glow Overlay -->
+<div class="absolute -top-12 -right-12 w-44 h-44 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col space-y-space-md">
+<!-- Item Metadata & Parcel Visual Anchor -->
+<div class="flex items-start gap-space-md">
+<div class="relative w-16 h-16 shrink-0 rounded-lg overflow-hidden bg-surface-container-high shadow-md">
+<img class="w-full h-full object-cover" data-alt="Close-up luxury studio product shot of matte black Sony WH-1000XM5 wireless noise cancelling headphones sitting in premium courier packing box with sleek high-tech unboxing cushions and dark slate background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKqYLjMCgEC7neyEIqnD60JLYioXopswPZi1BpwVlLGxjyuCUpmR6Zjey1CdzMwrAxG-IkOHnrwY1CJsNTRfZY8kxsbC77skSu2OP66TwbAcpOI3X22MkEQn2JsF0O4y43jYEIAy-uMWhTvOmK3A4oswUKilS4ZJ5DfF2TXlw0VquKAcCU0U8yunSpwhYK6Q7NnJJiNjmd6Nzmz_gFb_c7lXfcuQaeemwdHgSct6NinC5nT2J5nFzj0g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<span class="material-symbols-outlined absolute bottom-1 right-1 text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">package_2</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-space-xs text-primary font-label-caps text-label-caps uppercase tracking-wider mb-1">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>Priority Transit</span>
+</div>
+<h1 class="font-headline-sm text-headline-sm text-on-surface leading-tight truncate">Sony WH-1000XM5 Headphones</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Sony Direct Store via FedEx Overnight</p>
+</div>
+</div>
+<!-- Tracking ID Action Row -->
+<div class="flex items-center justify-between bg-surface-container-low px-space-md py-space-sm rounded-lg">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-outline text-[18px]">barcode</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface font-semibold tracking-wide" id="trackingCode">TRK-9842-8810</span>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<button aria-label="Copy tracking ID" class="h-9 px-space-sm flex items-center gap-1 rounded bg-surface-container-high text-on-surface hover:text-primary transition-all active:scale-95" id="copyBtn" onclick="copyTrackingCode()">
+<span class="material-symbols-outlined text-[16px]" id="copyIcon">content_copy</span>
+<span class="font-label-sm text-label-sm font-semibold" id="copyText">Copy</span>
+</button>
+<button aria-label="Show QR code" class="w-9 h-9 flex items-center justify-center rounded bg-surface-container-high text-on-surface hover:text-primary transition-all active:scale-95" onclick="toggleQrModal()">
+<span class="material-symbols-outlined text-[18px]">qr_code_2</span>
+</button>
+</div>
+</div>
+<!-- Live Expected Time Banner -->
+<div class="relative bg-secondary-container rounded-lg p-space-md text-on-secondary-container shadow-lg overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-r from-secondary/20 via-transparent to-transparent pointer-events-none"></div>
+<div class="flex items-center justify-between relative z-10">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="relative flex h-3 w-3 shrink-0">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-fixed opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary-fixed"></span>
+</span>
+<div class="truncate">
+<div class="font-label-caps text-label-caps uppercase tracking-wider text-secondary-fixed font-bold leading-none mb-1">On Schedule</div>
+<div class="font-headline-sm text-headline-sm font-bold text-on-secondary leading-tight truncate">Today by 2:45 PM</div>
+</div>
+</div>
+<div class="shrink-0 text-right">
+<span class="font-label-telemetry text-label-telemetry bg-surface-container-lowest/40 px-space-xs py-1 rounded text-secondary-fixed font-semibold">ETA ~18m</span>
+</div>
+</div>
+</div>
+<!-- Security Requirement Notice -->
+<div class="flex items-center gap-space-sm bg-surface-container-high px-space-md py-space-sm rounded-lg">
+<span class="material-symbols-outlined text-tertiary text-[20px] shrink-0" style="font-variation-settings: 'FILL' 1;">draw</span>
+<div class="min-w-0 flex-1">
+<p class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Direct Signature Required</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Must present government ID or digital pass</p>
+</div>
+<span class="font-label-caps text-label-caps uppercase px-2 py-0.5 rounded bg-tertiary/15 text-tertiary shrink-0 font-bold">Mandatory</span>
+</div>
+</div>
+</div>
+<!-- QR Modal Popover (Toggleable) -->
+<div class="hidden relative bg-surface-container-high rounded-xl p-space-md shadow-2xl text-center space-y-space-sm" id="qrModal">
+<div class="flex justify-between items-center">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-primary font-bold">Driver Scan Barcode</span>
+<button class="w-7 h-7 flex items-center justify-center rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface" onclick="toggleQrModal()">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<div class="bg-surface-bright p-space-md rounded-lg flex items-center justify-center">
+<!-- High contrast vector QR display -->
+<svg class="w-36 h-36 text-surface-container-lowest" fill="currentColor" viewbox="0 0 100 100">
+<rect fill="#dfe2f1" height="100" width="100"></rect>
+<path d="M10 10h24v24H10zm6 6v12h12V16zm50-6h24v24H66zm6 6v12h12V16zM10 66h24v24H10zm6 6v12h12V72zm28-56h6v12h-6zm12 6h6v6h-6zm-12 12h18v6H44zm22 6h12v6H66zm-28 6h6v12h-6zm12 6h6v18h-6zm12-6h6v6h-6zm12 6h6v12h-6zm-36 12h12v6H38zm24 6h12v12H62zm18-6h6v12h-6z" fill="#0a0e18"></path>
+</svg>
+</div>
+<p class="font-label-telemetry text-label-telemetry text-primary-fixed-dim">TRK-9842-8810-SEA</p>
+</div>
+<!-- Telemetry & Spec Sheet Bento -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container p-space-md rounded-xl space-y-1">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">scale</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Gross Weight</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">1.45 kg</div>
+<div class="font-label-telemetry text-label-sm text-outline">3.2 lbs tare gross</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl space-y-1">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">straighten</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Dimensions</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">28×22×10</div>
+<div class="font-label-telemetry text-label-sm text-outline">Centimeters (Volumetric)</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl space-y-1">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">flight_takeoff</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Origin Facility</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Ontario Hub</div>
+<div class="font-body-sm text-body-sm text-outline truncate">California, USA</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl space-y-1">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Destination</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-secondary font-bold truncate">Seattle, WA</div>
+<div class="font-body-sm text-body-sm text-outline truncate">Residential Drop-Off</div>
+</div>
+</div>
+<!-- Interactive Map Glimpse Section -->
+<div class="relative bg-surface-container rounded-xl overflow-hidden shadow-lg">
+<div class="w-full h-36 bg-cover bg-center" data-location="Seattle, WA" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA5lq44MaM3WIpNcs_wDIpBaTYO6CnzaXXmaFtQD9uYK666o_u0hXBOypgeFqhawATCQAl1ZujaCaLPyADBVJBiC7gYMwdZSHUVtVrl0MdWaWgozUgg2ms8HadOn0p-WU0UA7PLOE6TxoR_Etewwj2ohbrw5GH756V3HH579wV-L3yboq8JHq2K2VjuUI_a_LBInq_kCr-VQoeGtu6AJFbAdkuPO3X8K0c1qyK5WLGRSPpBui46oMKr9g')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
+<div class="absolute bottom-space-md left-space-md right-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
+</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface font-semibold">Van #402 • 0.8 mi away</span>
+</div>
+<button class="px-space-sm py-1 rounded bg-surface-container-high/90 text-primary hover:text-on-surface text-label-caps font-label-caps uppercase tracking-wider flex items-center gap-1 backdrop-blur-md">
+<span>Live Route</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Detailed Interactive Milestones Timeline -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-xl space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">route</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Milestones Telemetry</h2>
+</div>
+<span class="font-label-telemetry text-label-sm text-secondary-fixed bg-secondary/15 px-2 py-0.5 rounded font-semibold uppercase">5 / 5 Logged</span>
+</div>
+<!-- Timeline Conduit -->
+<div class="relative pl-7 space-y-space-lg">
+<!-- Connected Vertical Guideline -->
+<div class="absolute left-3 top-3 bottom-3 w-0.5 bg-surface-container-highest"></div>
+<!-- STEP 4: CURRENT (In Progress) -->
+<div class="relative group">
+<!-- Beacon Node -->
+<div class="absolute -left-7 top-1.5 flex items-center justify-center">
+<span class="animate-ping absolute h-6 w-6 rounded-full bg-secondary/40"></span>
+<div class="w-6 h-6 rounded-full bg-secondary flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-on-secondary text-[14px] font-bold">local_shipping</span>
+</div>
+</div>
+<div class="bg-surface-container-high rounded-lg p-space-md space-y-space-xs shadow-md">
+<div class="flex items-start justify-between gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold leading-tight">Out for Final Delivery</span>
+<span class="font-label-telemetry text-label-telemetry text-secondary-fixed font-bold shrink-0">1:12 PM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-snug">Courier in transit to local address destination.</p>
+<!-- Driver Card Sub-item -->
+<div class="mt-space-sm pt-space-xs flex items-center justify-between bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-9 h-9 rounded-full object-cover shrink-0" data-alt="Portrait photo of a certified professional delivery courier woman named Elena Rostova wearing dark logistics uniform and blue cap smiling gently in high-definition daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGyopUiTwjxx0i7FDLTIeMYKCnAvdBEyjl50tLIHhhj0V6QSxWfyVblRxKWQBLuW8flMbNDHut1EewGZHISyjOkCTlboiQiX0X4EfPtDvsYQppG6quVsFejYhFNeYOOPEfJ1Mxz-2wzduLnHSlzSIqTsBMzWcTecAWtwkG6jO8i8y6MOiGxv8NHKSEPmXlWXyIR_7mvwqHFkuc2CyHdE54DtI7yVrnzae9WB48KUmJrR48FROMJJgGtw"/>
+<div class="min-w-0">
+<div class="font-body-sm text-body-sm text-on-surface font-bold truncate">Elena Rostova</div>
+<div class="font-label-telemetry text-label-sm text-on-surface-variant truncate">Van #402 • Seattle Depot</div>
+</div>
+</div>
+<a aria-label="Call Courier" class="w-9 h-9 rounded bg-surface-container-high flex items-center justify-center text-primary hover:text-on-surface active:scale-90 transition-transform" href="tel:5550192">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+</div>
+</div>
+</div>
+<!-- STEP 3: Completed -->
+<div class="relative">
+<div class="absolute -left-7 top-1 w-6 h-6 rounded-full bg-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-on-primary text-[14px]">check</span>
+</div>
+<div class="space-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Arrived at Regional Center</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">06:45 AM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Seattle SORT Logistics Facility (Bay 14)</p>
+<span class="inline-block font-label-caps text-label-caps uppercase text-outline">Processed &amp; Sorted for dispatch</span>
+</div>
+</div>
+<!-- STEP 2: Completed -->
+<div class="relative">
+<div class="absolute -left-7 top-1 w-6 h-6 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[14px]">flight</span>
+</div>
+<div class="space-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Departed Sort Hub</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Yesterday, 11:20 PM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sacramento Air Logistics Hub (Flight FX-804)</p>
+</div>
+</div>
+<!-- STEP 1: Completed -->
+<div class="relative">
+<div class="absolute -left-7 top-1 w-6 h-6 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-outline text-[14px]">inventory_2</span>
+</div>
+<div class="space-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Picked Up &amp; Scanned</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Yesterday, 4:15 PM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">San Jose Fulfillment Center</p>
+</div>
+</div>
+<!-- STEP 0: Initial -->
+<div class="relative">
+<div class="absolute -left-7 top-1 w-6 h-6 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-outline text-[14px]">receipt_long</span>
+</div>
+<div class="space-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Shipping Info Received</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface-variant">Nov 12, 10:00 AM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Billing details &amp; manifest verified by sender</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Delivery Instructions Card -->
+<div class="bg-surface-container rounded-xl p-space-md space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Delivery Protocol</span>
+<span class="font-label-caps text-label-caps uppercase text-secondary font-semibold">Active Gate Code</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">pin</span>
+<div>
+<div class="font-label-telemetry text-label-telemetry text-on-surface font-bold">#4829 (Main Gate)</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Leave behind patio column if no answer</div>
+</div>
+</div>
+<button class="text-primary hover:text-on-surface font-label-caps text-label-caps uppercase font-bold p-1" onclick="editInstructions()">Edit</button>
+</div>
+</div>
+<!-- Bottom Floating Tactical Action Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface/90 backdrop-blur-xl px-gutter py-space-sm pb-safe shadow-[0_-8px_24px_rgba(0,0,0,0.6)]">
+<div class="max-w-md mx-auto grid grid-cols-2 gap-space-sm">
+<!-- Tactical Sub-Action -->
+<button class="h-12 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-bright flex items-center justify-center gap-space-xs transition-colors active:scale-95 shadow-md" onclick="openDeliverySheet()">
+<span class="material-symbols-outlined text-[20px] text-primary">tune</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider font-bold">Manage Delivery</span>
+</button>
+<!-- Primary Action -->
+<button class="h-12 rounded-lg bg-primary-container text-on-primary-container hover:brightness-110 flex items-center justify-center gap-space-xs transition-all active:scale-95 shadow-lg" onclick="shareTrackingSheet()">
+<span class="material-symbols-outlined text-[20px]">share</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider font-bold">Share Tracking</span>
+</button>
+</div>
+</div>
+<!-- Manage Delivery Sheet Modal -->
+<div class="hidden fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-sm flex flex-col justify-end p-gutter pb-safe" id="manageSheet">
+<div class="bg-surface-container-high rounded-xl p-space-md space-y-space-md shadow-2xl animate-fade-in">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Manage Delivery Options</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Update shipment instructions before drop-off</p>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="closeDeliverySheet()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="space-y-space-xs">
+<button class="w-full text-left p-space-sm rounded-lg bg-surface-container hover:bg-surface-bright flex items-center justify-between transition-colors" onclick="triggerToast('Redirected to Local FedEx Locker')">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">storefront</span>
+<div>
+<div class="font-body-md text-body-md text-on-surface font-semibold">Hold at FedEx Location</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Pick up at 4th Ave Grocery Locker</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">chevron_right</span>
+</button>
+<button class="w-full text-left p-space-sm rounded-lg bg-surface-container hover:bg-surface-bright flex items-center justify-between transition-colors" onclick="triggerToast('Electronic signature pre-cleared!')">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary">stylus_note</span>
+<div>
+<div class="font-body-md text-body-md text-on-surface font-semibold">Pre-Sign Electronically</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Waives direct physical contact requirement</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">chevron_right</span>
+</button>
+<button class="w-full text-left p-space-sm rounded-lg bg-surface-container hover:bg-surface-bright flex items-center justify-between transition-colors" onclick="triggerToast('Gate code instructions refreshed')">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary">key</span>
+<div>
+<div class="font-body-md text-body-md text-on-surface font-semibold">Update Gate / Access Code</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Provide fresh building pin or buzzer info</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Micro Interaction Toast Feedback Notification -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 z-50 hidden bg-surface-bright px-space-md py-space-xs rounded-full shadow-2xl flex items-center gap-space-xs transition-opacity duration-300" id="toastNotification">
+<span class="material-symbols-outlined text-secondary text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface font-medium" id="toastMsg">Action completed</span>
+</div>
+</div>
+<script>
+  function copyTrackingCode() {
+    const code = document.getElementById('trackingCode').innerText;
+    navigator.clipboard.writeText(code).then(() => {
+      const copyIcon = document.getElementById('copyIcon');
+      const copyText = document.getElementById('copyText');
+      copyIcon.innerText = 'done';
+      copyText.innerText = 'Copied';
+      triggerToast('Tracking ID copied to clipboard');
+      setTimeout(() => {
+        copyIcon.innerText = 'content_copy';
+        copyText.innerText = 'Copy';
+      }, 2000);
+    }).catch(() => {
+      triggerToast('Copied: ' + code);
+    });
+  }
+
+  function toggleQrModal() {
+    const modal = document.getElementById('qrModal');
+    if (modal.classList.contains('hidden')) {
+      modal.classList.remove('hidden');
+    } else {
+      modal.classList.add('hidden');
+    }
+  }
+
+  function openDeliverySheet() {
+    document.getElementById('manageSheet').classList.remove('hidden');
+  }
+
+  function closeDeliverySheet() {
+    document.getElementById('manageSheet').classList.add('hidden');
+  }
+
+  function shareTrackingSheet() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'TrackPulse Live Shipment: Sony WH-1000XM5',
+        text: 'Tracking shipment TRK-9842-8810. Expected today by 2:45 PM.',
+        url: window.location.href,
+      }).catch(() => {});
+    } else {
+      copyTrackingCode();
+      triggerToast('Share URL copied to clipboard');
+    }
+  }
+
+  function editInstructions() {
+    triggerToast('Prompting Gate Code update prompt...');
+    openDeliverySheet();
+  }
+
+  function triggerToast(message) {
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMsg');
+    toastMsg.innerText = message;
+    toast.classList.remove('hidden');
+    setTimeout(() => {
+      toast.classList.add('hidden');
+    }, 2800);
+  }
+</script></main></body></html>

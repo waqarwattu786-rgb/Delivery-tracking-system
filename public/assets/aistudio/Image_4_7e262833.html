@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface": "#0f131d", "primary-container": "#4d8eff", "on-background": "#dfe2f1", "on-secondary-fixed-variant": "#005236", "outline": "#8c909f", "secondary-fixed": "#6ffbbe", "tertiary-fixed-dim": "#ffb95f", "on-tertiary": "#472a00", "surface-container-high": "#262a35", "secondary-container": "#00a572", "error-container": "#93000a", "on-primary-fixed-variant": "#004395", "on-secondary-fixed": "#002113", "on-error-container": "#ffdad6", "on-secondary-container": "#00311f", "surface-container-highest": "#313540", "primary-fixed-dim": "#adc6ff", "tertiary": "#ffb95f", "surface-dim": "#0f131d", "surface-container-low": "#171b26", "tertiary-fixed": "#ffddb8", "error": "#ffb4ab", "secondary": "#4edea3", "on-primary-container": "#00285d", "on-surface-variant": "#c2c6d6", "on-surface": "#dfe2f1", "on-tertiary-container": "#3e2400", "surface-container-lowest": "#0a0e18", "on-primary": "#002e6a", "surface-tint": "#adc6ff", "surface-bright": "#353944", "outline-variant": "#424754", "inverse-on-surface": "#2c303b", "primary": "#adc6ff", "primary-fixed": "#d8e2ff", "on-error": "#690005", "inverse-primary": "#005ac2", "inverse-surface": "#dfe2f1", "surface-container": "#1c1f2a", "background": "#0f131d", "on-secondary": "#003824", "secondary-fixed-dim": "#4edea3", "on-tertiary-fixed": "#2a1700", "tertiary-container": "ca8100", "surface-variant": "#313540", "on-tertiary-fixed-variant": "#653e00", "on-primary-fixed": "#001a42" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "0.75rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter": "1rem", "space-xl": "2rem", "space-sm": "0.5rem", "margin": "1.25rem", "space-md": "1rem", "margin-mobile": "1rem" }, fontFamily: { "headline-md": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"], "label-caps": ["Inter"], "headline-xl": ["Plus Jakarta Sans"], "label-telemetry": ["JetBrains Mono"], "body-md": ["Inter"], "body-lg": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"] }, fontSize: { "headline-md": ["20px", { lineHeight: "26px", letterSpacing: "-0.015em", fontWeight: "700" }], "label-sm": ["10px", { lineHeight: "12px", letterSpacing: "0.04em", fontWeight: "600" }], "headline-xl-mobile": ["26px", { lineHeight: "32px", letterSpacing: "-0.025em", fontWeight: "800" }], "label-caps": ["11px", { lineHeight: "14px", letterSpacing: "0.08em", fontWeight: "700" }], "headline-xl": ["32px", { lineHeight: "40px", letterSpacing: "-0.03em", fontWeight: "800" }], "label-telemetry": ["13px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "body-lg": ["16px", { lineHeight: "24px", letterSpacing: "-0.005em", fontWeight: "400" }], "headline-sm": ["16px", { lineHeight: "22px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-lg": ["24px", { lineHeight: "30px", letterSpacing: "-0.02em", fontWeight: "700" }], "body-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "400" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; background-color: #0f131d; } body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style></head><body class="bg-surface text-on-surface antialiased min-h-screen flex flex-col font-body-md"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="TrackPulse Brand Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1VdEgERirUTUCDV044SeSiRnis4FSjHPMy0txr1C-bVAUZZqp9aJtt8WzksOIOo8a25K5IGfpE6MTFDD3dC-PxUR7RKB9J4FCr3wrzzin75ZnvYtm4CPUZQlkcaJNAINSAsHTBmnBAdwaIRKShoj4D4-80wHyTpOlC5LJXWXqNhzxBTrKNUwdKG4rGvw5v3kB95Zk-8_amPxrhpXvEpdrw8ut4JFHbtnK2ouQXNAul6PLpVY6LKziogWNr4"/><div class="flex flex-col truncate"><span class="font-headline-sm text-headline-sm text-primary tracking-tight truncate leading-tight">TrackPulse</span><span class="font-label-caps text-label-caps text-on-surface-variant truncate uppercase leading-tight">Live Map</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-tertiary ring-2 ring-surface shadow-[0_0_8px_rgba(255,185,95,0.7)]"></span></button><button aria-label="User Profile" class="w-11 h-11 flex items-center justify-center" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvXIiks4D043PJW61EtuSxyZZGEC01oGCFMUo_7nUFC6sLwQrQOIjnofCV5_F7z3Q2pG06s_jO0ZGUWWxtHSxuRhnH_hyLPVlbaclBQ2bTIup79mXJ1bej_H0fU3SSDLKfmuHD-BbwT42Gx8ImzRMthDzlVHXP7LJP-Anb2TfmpAtA8NCJGaiYE0t4ai-Gp9dsIis9E7aLckE8-rQ7HH5A_R7Spv7zbIwKRl7UnhLh5T2i-BMpNTjshg"/></button></div></div></header><main class="flex-1 flex flex-col w-full px-gutter pt-16 pb-24 bg-surface min-h-[calc(100vh-4rem)]"><div class="flex flex-col w-full relative select-none">
+<!-- Interactive Tactical Map Canvas Area -->
+<div class="relative w-full h-[360px] overflow-hidden rounded-xl shadow-xl bg-surface-container-lowest">
+<!-- Dark Vector Map Simulation SVG Layer -->
+<svg class="absolute inset-0 w-full h-full object-cover pointer-events-none" preserveaspectratio="none" viewbox="0 0 400 360">
+<defs>
+<!-- Route polyline gradient -->
+<lineargradient id="routeGlow" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#4d8eff" stop-opacity="0.9"></stop>
+<stop offset="55%" stop-color="#adc6ff" stop-opacity="1"></stop>
+<stop offset="100%" stop-color="#4edea3" stop-opacity="0.95"></stop>
+</lineargradient>
+<!-- Pulsing radar rings -->
+<radialgradient cx="50%" cy="50%" id="destRadar" r="50%">
+<stop offset="0%" stop-color="#4edea3" stop-opacity="0.65"></stop>
+<stop offset="60%" stop-color="#4edea3" stop-opacity="0.2"></stop>
+<stop offset="100%" stop-color="#4edea3" stop-opacity="0"></stop>
+</radialgradient>
+<!-- Filter for tactical luminescence -->
+<filter height="140%" id="neonBlur" width="140%" x="-20%" y="-20%">
+<fegaussianblur result="blur" stddeviation="3.5"></fegaussianblur>
+<femerge>
+<femergenode in="blur"></femergenode>
+<femergenode in="SourceGraphic"></femergenode>
+</femerge>
+</filter>
+</defs>
+<!-- Grid & Secondary Streets -->
+<path d="M-20,40 L420,40 M-20,110 L420,110 M-20,180 L420,180 M-20,250 L420,250 M-20,310 L420,310" stroke="#1c1f2a" stroke-width="1.5"></path>
+<path d="M40,-20 L40,380 M110,-20 L110,380 M190,-20 L190,380 M270,-20 L270,380 M350,-20 L350,380" stroke="#1c1f2a" stroke-width="1.5"></path>
+<!-- Highway arterial veins -->
+<path d="M-10,130 C90,140 130,220 220,230 S330,120 420,110" fill="none" stroke="#262a35" stroke-linecap="round" stroke-width="8"></path>
+<path d="M-10,130 C90,140 130,220 220,230 S330,120 420,110" fill="none" stroke="#313540" stroke-dasharray="8 6" stroke-width="4"></path>
+<!-- Cross avenues -->
+<path d="M70,-10 C80,90 140,160 160,370" fill="none" stroke="#262a35" stroke-width="6"></path>
+<path d="M290,-10 C260,110 310,210 340,370" fill="none" stroke="#262a35" stroke-width="5"></path>
+<!-- Completed Path Segment (faded cyan) -->
+<path d="M50,80 L105,80 L105,155 L178,155" fill="none" stroke="#4d8eff" stroke-linecap="round" stroke-opacity="0.3" stroke-width="4"></path>
+<!-- Active Animated Polyline to Destination -->
+<path class="animate-pulse" d="M178,155 L245,155 C275,155 285,185 285,215 L285,275 L312,275" fill="none" filter="url(#neonBlur)" id="activeRoute" stroke="url(#routeGlow)" stroke-dasharray="7 4" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path>
+<!-- Destination Radar Waves -->
+<circle class="animate-ping" cx="312" cy="275" fill="url(#destRadar)" r="28" style="animation-duration: 2.8s;"></circle>
+<circle cx="312" cy="275" fill="#4edea3" fill-opacity="0.25" r="14"></circle>
+<!-- Hub Source Node (Stop 14) -->
+<circle cx="50" cy="80" fill="#424754" r="5"></circle>
+<circle cx="50" cy="80" fill="#8c909f" r="2.5"></circle>
+</svg>
+<!-- Top Left Floating Telemetry Chips -->
+<div class="absolute top-3 left-3 flex flex-col gap-1.5 z-20 pointer-events-auto">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high/90 backdrop-blur-md shadow-md text-on-surface">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-telemetry text-label-telemetry text-secondary uppercase tracking-wider">LIVE GPS</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container-high/90 backdrop-blur-md shadow-md">
+<span class="material-symbols-outlined text-[16px] text-tertiary">speed</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface font-semibold">28 <span class="text-on-surface-variant font-normal">MPH</span></span>
+</div>
+</div>
+<!-- Top Right Map View Controls (Tactical Floating Stack) -->
+<div class="absolute top-3 right-3 flex flex-col gap-2 z-20 pointer-events-auto">
+<button aria-label="Toggle 3D View" class="w-10 h-10 flex items-center justify-center rounded-xl bg-surface-container-high/90 backdrop-blur-md text-on-surface shadow-lg hover:bg-surface-bright active:scale-95 transition-all" id="btn3D" type="button">
+<span class="font-label-caps text-label-caps font-bold text-primary">3D</span>
+</button>
+<button aria-label="Center on Delivery Courier" class="w-10 h-10 flex items-center justify-center rounded-xl bg-surface-container-high/90 backdrop-blur-md text-primary shadow-lg hover:bg-surface-bright active:scale-95 transition-all" id="btnCenter" type="button">
+<span class="material-symbols-outlined text-[20px]">my_location</span>
+</button>
+<button aria-label="Toggle Traffic Conditions" class="w-10 h-10 flex items-center justify-center rounded-xl bg-surface-container-high/90 backdrop-blur-md text-secondary shadow-lg hover:bg-surface-bright active:scale-95 transition-all" id="btnTraffic" type="button">
+<span class="material-symbols-outlined text-[20px]">traffic</span>
+</button>
+</div>
+<!-- Real-Time Delivery Courier Marker (Positioned along vector path) -->
+<div class="absolute top-[138px] left-[162px] -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center pointer-events-none transition-all duration-700 ease-out">
+<!-- Directional heading beam -->
+<div class="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-b-[10px] border-b-primary opacity-80 mb-0.5 animate-bounce"></div>
+<!-- Pulse halo & Courier icon container -->
+<div class="relative w-11 h-11 rounded-full bg-primary-container flex items-center justify-center text-on-primary shadow-[0_0_18px_rgba(77,142,255,0.7)]">
+<span class="material-symbols-outlined text-[22px]">local_shipping</span>
+<span class="absolute -top-1 -right-1 w-3.5 h-3.5 rounded-full bg-secondary flex items-center justify-center text-on-secondary shadow-sm">
+<span class="material-symbols-outlined text-[10px] font-bold">bolt</span>
+</span>
+</div>
+<div class="mt-1 px-2 py-0.5 rounded-md bg-surface-container-lowest/90 backdrop-blur-md shadow-md flex items-center gap-1">
+<span class="font-label-telemetry text-label-sm text-primary font-bold">VAN #402</span>
+</div>
+</div>
+<!-- Destination Pin (Home marker at Stop 16) -->
+<div class="absolute top-[260px] left-[300px] -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center pointer-events-none">
+<div class="w-9 h-9 rounded-full bg-secondary flex items-center justify-center text-on-secondary shadow-[0_0_16px_rgba(78,222,163,0.6)]">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">home</span>
+</div>
+<div class="mt-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/90 text-on-surface font-label-caps text-label-sm">
+        YOUR APT
+      </div>
+</div>
+<!-- Subtle bottom gradient feather for clean drawer transition -->
+<div class="absolute inset-x-0 bottom-0 h-8 bg-gradient-to-t from-surface-container to-transparent pointer-events-none z-10"></div>
+</div>
+<!-- Persistent Interactive Sliding Drawer / Bottom Sheet Stack -->
+<div class="relative z-30 -mt-3 flex flex-col w-full rounded-t-2xl bg-surface-container shadow-2xl p-space-md gap-space-md">
+<!-- Drag Handle / Tactile Gripper -->
+<div class="w-full flex items-center justify-center pt-0.5 pb-1 cursor-grab active:cursor-grabbing">
+<div class="w-12 h-1.5 rounded-full bg-outline-variant/60 hover:bg-outline transition-colors"></div>
+</div>
+<!-- ETA & Real-Time Status Header -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-tertiary/15 text-tertiary font-label-caps text-label-caps flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+            IN PROGRESS
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Driver is 2 stops away</span>
+</div>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface tracking-tight">02:38 PM</span>
+<span class="font-body-sm text-body-sm text-secondary font-semibold">18 mins remaining</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[22px]">timer</span>
+</div>
+<span class="font-label-telemetry text-label-sm text-on-surface-variant mt-1">ON SCHEDULE</span>
+</div>
+</div>
+<!-- Driver Profile Tactical Glass Card -->
+<div class="w-full rounded-xl bg-surface-container-high p-space-sm shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative shrink-0">
+<img alt="Courier specialist Elena Rostova" class="w-13 h-13 w-12 h-12 rounded-xl object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvXIiks4D043PJW61EtuSxyZZGEC01oGCFMUo_7nUFC6sLwQrQOIjnofCV5_F7z3Q2pG06s_jO0ZGUWWxtHSxuRhnH_hyLPVlbaclBQ2bTIup79mXJ1bej_H0fU3SSDLKfmuHD-BbwT42Gx8ImzRMthDzlVHXP7LJP-Anb2TfmpAtA8NCJGaiYE0t4ai-Gp9dsIis9E7aLckE8-rQ7HH5A_R7Spv7zbIwKRl7UnhLh5T2i-BMpNTjshg"/>
+<div class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-secondary flex items-center justify-center text-on-secondary shadow-sm">
+<span class="material-symbols-outlined text-[10px] font-bold">verified</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Elena Rostova</span>
+<span class="px-1.5 py-0.2 rounded bg-primary/15 text-primary font-label-caps text-label-sm shrink-0">PRO</span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5 text-on-surface-variant font-body-sm text-body-sm truncate">
+<span class="flex items-center text-tertiary">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-semibold ml-0.5 text-on-surface">4.98</span>
+</span>
+<span>•</span>
+<span class="truncate">3,420+ deliveries</span>
+</div>
+<span class="font-label-telemetry text-label-sm text-primary-fixed-dim truncate mt-0.5">Electric Transit Van #402</span>
+</div>
+</div>
+</div>
+<!-- Quick Contact Actions -->
+<div class="grid grid-cols-2 gap-space-sm pt-1">
+<button class="h-12 px-3 rounded-lg bg-surface-container-highest hover:bg-surface-bright active:scale-95 text-on-surface flex items-center justify-center gap-2 shadow-sm transition-all" id="btnCallCourier" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">phone_in_talk</span>
+<span class="font-label-caps text-label-caps">Call Courier</span>
+</button>
+<button class="h-12 px-3 rounded-lg bg-primary text-on-primary hover:bg-primary-container active:scale-95 flex items-center justify-center gap-2 shadow-sm transition-all" id="btnMessageCourier" type="button">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span class="font-label-caps text-label-caps font-bold">Instructions</span>
+</button>
+</div>
+<!-- Quick Delivery Preset Chips for Instant Courier Note -->
+<div class="flex items-center gap-1.5 overflow-x-auto py-1">
+<button class="preset-btn px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-bright text-body-sm font-body-sm whitespace-nowrap transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">door_front</span>
+          Leave at door
+        </button>
+<button class="preset-btn px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-bright text-body-sm font-body-sm whitespace-nowrap transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">pin</span>
+          Gate code: 4921
+        </button>
+<button class="preset-btn px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-bright text-body-sm font-body-sm whitespace-nowrap transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">notifications_off</span>
+          Please don't ring
+        </button>
+</div>
+</div>
+<!-- Live Stop Progression Milestone Conduit -->
+<div class="flex flex-col gap-space-sm w-full">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Route Progression</span>
+<span class="font-label-telemetry text-label-sm text-secondary">LIVE FEED</span>
+</div>
+<div class="flex flex-col w-full bg-surface-container-high rounded-xl p-space-md">
+<!-- Milestone 1: Stop 14 (Completed) -->
+<div class="flex items-start gap-3 relative pb-4">
+<!-- Continuous route connecting line -->
+<div class="absolute left-3.5 top-6 bottom-0 w-0.5 bg-secondary"></div>
+<div class="relative z-10 w-7 h-7 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary shrink-0">
+<span class="material-symbols-outlined text-[15px] font-bold">check</span>
+</div>
+<div class="flex items-center justify-between w-full min-w-0">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-telemetry text-label-telemetry text-on-surface font-semibold">Stop 14</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-highest text-on-surface-variant font-label-caps text-label-sm">DELIVERED</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Oak Street Hub • Package dropped</span>
+</div>
+<span class="font-label-telemetry text-label-sm text-on-surface-variant shrink-0">02:14 PM</span>
+</div>
+</div>
+<!-- Milestone 2: Stop 15 (Current Drop-off) -->
+<div class="flex items-start gap-3 relative pb-4">
+<div class="absolute left-3.5 top-6 bottom-0 w-0.5 bg-surface-container-highest"></div>
+<div class="relative z-10 w-7 h-7 rounded-full bg-tertiary-container flex items-center justify-center text-on-tertiary shrink-0 shadow-[0_0_12px_rgba(255,185,95,0.4)]">
+<span class="material-symbols-outlined text-[15px] animate-spin" style="animation-duration: 4s;">sync</span>
+</div>
+<div class="flex items-center justify-between w-full min-w-0">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-telemetry text-label-telemetry text-tertiary font-bold">Stop 15</span>
+<span class="px-1.5 py-0.2 rounded bg-tertiary/20 text-tertiary font-label-caps text-label-sm font-semibold">UNLOADING</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface truncate mt-0.5">Maple Ave. • 1 package remaining</span>
+</div>
+<span class="font-label-telemetry text-label-sm text-tertiary font-semibold shrink-0">NOW</span>
+</div>
+</div>
+<!-- Milestone 3: Stop 16 (Your Address) -->
+<div class="flex items-start gap-3 relative">
+<div class="relative z-10 w-7 h-7 rounded-full bg-primary flex items-center justify-center text-on-primary shrink-0 shadow-[0_0_14px_rgba(77,142,255,0.5)]">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">home</span>
+</div>
+<div class="flex items-center justify-between w-full min-w-0">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-telemetry text-label-telemetry text-primary font-bold">Stop 16</span>
+<span class="px-1.5 py-0.2 rounded bg-primary/20 text-primary font-label-caps text-label-sm">DESTINATION</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate mt-0.5">742 Evergreen Terr, Apt 4B</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Signature verification required</span>
+</div>
+<span class="font-label-telemetry text-label-sm text-primary font-bold shrink-0">02:38 PM</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Action / Reschedule Utility Capsule Bar -->
+<div class="flex items-center justify-between gap-space-sm pt-1">
+<button class="flex-1 h-11 px-3 rounded-lg bg-surface-container-high hover:bg-surface-bright active:scale-95 text-on-surface flex items-center justify-center gap-1.5 shadow-sm transition-all" id="btnChangeLocation" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">edit_location_alt</span>
+<span class="font-label-caps text-label-caps truncate">Change Drop-off</span>
+</button>
+<button class="flex-1 h-11 px-3 rounded-lg bg-surface-container-high hover:bg-surface-bright active:scale-95 text-on-surface flex items-center justify-center gap-1.5 shadow-sm transition-all" id="btnNeighbor" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">handshake</span>
+<span class="font-label-caps text-label-caps truncate">Leave with Neighbor</span>
+</button>
+</div>
+<!-- Live Toast Notification Banner for Quick Presets -->
+<div class="hidden w-full p-2.5 rounded-lg bg-secondary-container text-on-secondary flex items-center gap-2 shadow-md transition-all" id="actionToast">
+<span class="material-symbols-outlined text-[18px]">task_alt</span>
+<span class="font-body-sm text-body-sm flex-1 truncate" id="toastMsg">Instruction dispatched to Elena</span>
+<button class="material-symbols-outlined text-[16px] opacity-80 hover:opacity-100" id="closeToast" type="button">close</button>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const toast = document.getElementById('actionToast');
+    const toastMsg = document.getElementById('toastMsg');
+    const closeToast = document.getElementById('closeToast');
+    const presetBtns = document.querySelectorAll('.preset-btn');
+    const btnCall = document.getElementById('btnCallCourier');
+    const btnCenter = document.getElementById('btnCenter');
+    const btn3D = document.getElementById('btn3D');
+    const btnTraffic = document.getElementById('btnTraffic');
+    const btnChangeLocation = document.getElementById('btnChangeLocation');
+    const btnNeighbor = document.getElementById('btnNeighbor');
+
+    function showToast(message) {
+      if (!toast) return;
+      toastMsg.textContent = message;
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 3500);
+    }
+
+    if (closeToast) {
+      closeToast.addEventListener('click', () => {
+        toast.classList.add('hidden');
+      });
+    }
+
+    presetBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const text = btn.textContent.trim();
+        showToast('Instruction added: "' + text + '"');
+      });
+    });
+
+    if (btnCall) {
+      btnCall.addEventListener('click', () => {
+        showToast('Connecting masked voice line to Elena...');
+      });
+    }
+
+    if (btnCenter) {
+      btnCenter.addEventListener('click', () => {
+        showToast('Centered camera view on Van #402');
+      });
+    }
+
+    if (btn3D) {
+      let is3d = false;
+      btn3D.addEventListener('click', () => {
+        is3d = !is3d;
+        btn3D.classList.toggle('text-secondary', is3d);
+        btn3D.classList.toggle('text-primary', !is3d);
+        showToast(is3d ? 'Tactical 3D perspective enabled' : 'Top-down orthogonal map view');
+      });
+    }
+
+    if (btnTraffic) {
+      let trafficActive = true;
+      btnTraffic.addEventListener('click', () => {
+        trafficActive = !trafficActive;
+        btnTraffic.classList.toggle('opacity-50', !trafficActive);
+        showToast(trafficActive ? 'High-density telemetry layer on' : 'Traffic flow layer hidden');
+      });
+    }
+
+    if (btnChangeLocation) {
+      btnChangeLocation.addEventListener('click', () => {
+        showToast('Reroute options available for next 8 mins');
+      });
+    }
+
+    if (btnNeighbor) {
+      btnNeighbor.addEventListener('click', () => {
+        showToast('Designate neighboring unit for Stop 16');
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-low/85 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.5)]" data-active-classes="text-primary bg-primary/10 shadow-[0_0_12px_rgba(173,198,255,0.2)]"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center h-12 px-3 rounded-xl gap-0.5 text-on-surface-variant transition-all" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-label-sm">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center h-12 px-3 rounded-xl gap-0.5 transition-all text-primary bg-primary/10 shadow-[0_0_12px_rgba(173,198,255,0.2)]" data-path="live-map" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-sm text-label-sm">Live Map</span></a><a class="flex flex-col items-center justify-center h-12 px-3 rounded-xl gap-0.5 text-on-surface-variant transition-all" data-path="shipments" href="#"><span class="material-symbols-outlined text-[22px]">local_shipping</span><span class="font-label-sm text-label-sm">Shipments</span></a><a class="flex flex-col items-center justify-center h-12 px-3 rounded-xl gap-0.5 text-on-surface-variant transition-all" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-sm text-label-sm">Profile</span></a></div></nav></body></html>

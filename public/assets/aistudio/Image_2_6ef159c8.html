@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface": "#0f131d", "primary-container": "#4d8eff", "on-background": "#dfe2f1", "on-secondary-fixed-variant": "#005236", "outline": "#8c909f", "secondary-fixed": "#6ffbbe", "tertiary-fixed-dim": "#ffb95f", "on-tertiary": "#472a00", "surface-container-high": "#262a35", "secondary-container": "#00a572", "error-container": "#93000a", "on-primary-fixed-variant": "#004395", "on-secondary-fixed": "#002113", "on-error-container": "#ffdad6", "on-secondary-container": "#00311f", "surface-container-highest": "#313540", "primary-fixed-dim": "#adc6ff", "tertiary": "#ffb95f", "surface-dim": "#0f131d", "surface-container-low": "#171b26", "tertiary-fixed": "#ffddb8", "error": "#ffb4ab", "secondary": "#4edea3", "on-primary-container": "#00285d", "on-surface-variant": "#c2c6d6", "on-surface": "#dfe2f1", "on-tertiary-container": "#3e2400", "surface-container-lowest": "#0a0e18", "on-primary": "#002e6a", "surface-tint": "#adc6ff", "surface-bright": "#353944", "outline-variant": "#424754", "inverse-on-surface": "#2c303b", "primary": "#adc6ff", "primary-fixed": "#d8e2ff", "on-error": "#690005", "inverse-primary": "#005ac2", "inverse-surface": "#dfe2f1", "surface-container": "#1c1f2a", "background": "#0f131d", "on-secondary": "#003824", "secondary-fixed-dim": "#4edea3", "on-tertiary-fixed": "#2a1700", "tertiary-container": "ca8100", "surface-variant": "#313540", "on-tertiary-fixed-variant": "#653e00", "on-primary-fixed": "#001a42" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "0.75rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter": "1rem", "space-xl": "2rem", "space-sm": "0.5rem", "margin": "1.25rem", "space-md": "1rem", "margin-mobile": "1rem" }, fontFamily: { "headline-md": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"], "label-caps": ["Inter"], "headline-xl": ["Plus Jakarta Sans"], "label-telemetry": ["JetBrains Mono"], "body-md": ["Inter"], "body-lg": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"] }, fontSize: { "headline-md": ["20px", { lineHeight: "26px", letterSpacing: "-0.015em", fontWeight: "700" }], "label-sm": ["10px", { lineHeight: "12px", letterSpacing: "0.04em", fontWeight: "600" }], "headline-xl-mobile": ["26px", { lineHeight: "32px", letterSpacing: "-0.025em", fontWeight: "800" }], "label-caps": ["11px", { lineHeight: "14px", letterSpacing: "0.08em", fontWeight: "700" }], "headline-xl": ["32px", { lineHeight: "40px", letterSpacing: "-0.03em", fontWeight: "800" }], "label-telemetry": ["13px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "body-lg": ["16px", { lineHeight: "24px", letterSpacing: "-0.005em", fontWeight: "400" }], "headline-sm": ["16px", { lineHeight: "22px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-lg": ["24px", { lineHeight: "30px", letterSpacing: "-0.02em", fontWeight: "700" }], "body-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "400" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; background-color: #0f131d; } body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased min-h-screen flex flex-col font-body-md"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="TrackPulse Brand Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1VdEgERirUTUCDV044SeSiRnis4FSjHPMy0txr1C-bVAUZZqp9aJtt8WzksOIOo8a25K5IGfpE6MTFDD3dC-PxUR7RKB9J4FCr3wrzzin75ZnvYtm4CPUZQlkcaJNAINSAsHTBmnBAdwaIRKShoj4D4-80wHyTpOlC5LJXWXqNhzxBTrKNUwdKG4rGvw5v3kB95Zk-8_amPxrhpXvEpdrw8ut4JFHbtnK2ouQXNAul6PLpVY6LKziogWNr4"/><div class="flex flex-col truncate"><span class="font-headline-sm text-headline-sm text-primary tracking-tight truncate leading-tight">TrackPulse</span><span class="font-label-caps text-label-caps text-on-surface-variant truncate uppercase leading-tight">Home</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-tertiary ring-2 ring-surface shadow-[0_0_8px_rgba(255,185,95,0.7)]"></span></button><button aria-label="User Profile" class="w-11 h-11 flex items-center justify-center" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvXIiks4D043PJW61EtuSxyZZGEC01oGCFMUo_7nUFC6sLwQrQOIjnofCV5_F7z3Q2pG06s_jO0ZGUWWxtHSxuRhnH_hyLPVlbaclBQ2bTIup79mXJ1bej_H0fU3SSDLKfmuHD-BbwT42Gx8ImzRMthDzlVHXP7LJP-Anb2TfmpAtA8NCJGaiYE0t4ai-Gp9dsIis9E7aLckE8-rQ7HH5A_R7Spv7zbIwKRl7UnhLh5T2i-BMpNTjshg"/></button></div></div></header><main class="flex-1 flex flex-col w-full px-gutter pt-16 pb-24 bg-surface min-h-[calc(100vh-4rem)]"><div class="flex flex-col w-full gap-space-md">
+<!-- Interactive Tactical Search Bar -->
+<div class="relative w-full">
+<div class="relative flex items-center bg-surface-container rounded-xl shadow-md overflow-hidden transition-all duration-300 focus-within:shadow-[0_0_20px_rgba(77,142,255,0.25)]">
+<div class="pl-space-md flex items-center pointer-events-none text-primary">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input autocomplete="off" class="w-full bg-transparent py-3.5 px-space-sm font-label-telemetry text-label-telemetry text-on-surface placeholder:text-outline focus:outline-none tracking-wider uppercase" id="tracking-search" placeholder="e.g. TRK-9842-US" spellcheck="false" type="text"/>
+<div class="pr-space-xs flex items-center gap-1">
+<button aria-label="Clear input" class="hidden w-8 h-8 rounded-lg items-center justify-center text-outline hover:text-on-surface transition-colors" id="clear-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+<button class="h-10 px-3 bg-surface-container-high hover:bg-surface-bright text-primary rounded-lg flex items-center gap-1.5 transition-all active:scale-95 shadow-sm" id="scan-btn" title="Scan barcode or QR" type="button">
+<span class="material-symbols-outlined text-[20px]">qr_code_scanner</span>
+<span class="font-label-caps text-label-caps tracking-wider hidden xs:inline">SCAN</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Featured Active Shipment Hero Card -->
+<section class="relative rounded-xl overflow-hidden bg-gradient-to-b from-surface-container-high via-surface-container to-surface-container-low shadow-[0_12px_32px_rgba(0,0,0,0.6)]">
+<!-- Ambient electric glow aura -->
+<div class="absolute -top-16 -right-16 w-44 h-44 rounded-full bg-primary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-16 -left-16 w-36 h-36 rounded-full bg-secondary-container/15 blur-2xl pointer-events-none"></div>
+<div class="relative p-space-md flex flex-col gap-space-md">
+<!-- Card Header: Status pill & Telemetry -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center gap-2">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary shadow-[0_0_10px_rgba(78,222,163,0.9)]"></span>
+</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Out for Delivery</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+            Arriving in ~24 mins (by 2:45 PM)
+          </span>
+</div>
+<div class="flex items-center bg-surface-container-highest px-2.5 py-1 rounded-full text-primary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[14px] mr-1">flight_takeoff</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">FedEx Air</span>
+</div>
+</div>
+<!-- Item Profile Details -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest/70 p-3 rounded-xl backdrop-blur-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-primary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">headphones</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="font-headline-sm text-headline-sm text-on-surface truncate">Sony WH-1000XM5</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant truncate">
+<span>TechWarehouse CA</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-label-telemetry text-label-telemetry text-primary">TRK-9842-8810</span>
+</div>
+</div>
+<button class="w-9 h-9 rounded-lg bg-surface-container-high hover:bg-surface-bright flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors shrink-0" id="copy-trk-btn" title="Copy Tracking ID" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+<!-- 4-Stage Tactical Milestone Progress Conduit -->
+<div class="flex flex-col gap-2 pt-1">
+<div class="grid grid-cols-4 gap-1.5 items-center">
+<div class="h-1.5 rounded-full bg-secondary shadow-[0_0_8px_rgba(78,222,163,0.5)]"></div>
+<div class="h-1.5 rounded-full bg-secondary shadow-[0_0_8px_rgba(78,222,163,0.5)]"></div>
+<div class="h-1.5 rounded-full bg-primary-container shadow-[0_0_10px_rgba(77,142,255,0.7)] animate-pulse"></div>
+<div class="h-1.5 rounded-full bg-surface-container-highest"></div>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider px-0.5">
+<span class="text-secondary font-semibold">Picked Up</span>
+<span class="text-secondary font-semibold">Transit</span>
+<span class="text-primary font-bold">Delivery</span>
+<span class="text-outline">Done</span>
+</div>
+</div>
+<!-- Courier / Proximity Snapshot -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2.5">
+<div class="relative">
+<img class="w-9 h-9 rounded-full object-cover shadow-md" data-alt="Close up portrait of Marcus, a friendly professional African-American male delivery courier wearing a navy uniform cap and subtle modern headset, illuminated in warm afternoon ambient street lighting with crisp cinematic focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5TDuQN7lJyR69bjNQJ2qa1t3wGtdQW-voFHV76E6px_4U-bNw1Gaw-nj3J4JOfKQhM_tMrnlEdiA6cU0UdPSIB7758troMd6vGiG8TN6BGDYEKIfaBJu1rerPAZsl7p_PXzhBkPIVN0Mx6-qgjqzhOQmhuCmb4XSsWBpPyrtXlnv1QprY4VmxvJxuSGbckdW4pfrWXbww0inANafC-OzbudnLeIZv-vXMxNoNtjReUwBdYvSLCBDrsQ"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-secondary shadow-[0_0_6px_rgba(78,222,163,0.8)]"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight">Marcus Vance</span>
+<span class="font-body-sm text-body-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span>
+              2 stops away
+            </span>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-highest/80 px-2.5 py-1.5 rounded-lg text-primary font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[16px] text-tertiary">speed</span>
+<span class="font-label-telemetry text-label-telemetry text-on-surface">ETA 14:45</span>
+</div>
+</div>
+<!-- Hero Call To Actions -->
+<div class="grid grid-cols-1 xs:grid-cols-2 gap-2.5 pt-1">
+<button class="h-12 w-full rounded-lg bg-primary hover:bg-primary-container text-on-primary font-headline-sm text-headline-sm flex items-center justify-center gap-2 shadow-[0_4px_16px_rgba(77,142,255,0.4)] transition-all active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">near_me</span>
+<span>Track on Live Map</span>
+</button>
+<button class="h-12 w-full rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-headline-sm text-headline-sm flex items-center justify-center gap-2 transition-all active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[20px]">doorbell</span>
+<span>Drop Instructions</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Metric Deck / Tactical Bento Grid -->
+<section class="grid grid-cols-3 gap-space-xs">
+<!-- Active Shipments Stat -->
+<div class="bg-surface-container p-3 rounded-xl flex flex-col justify-between gap-1 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="w-6 h-6 rounded-md bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">package_2</span>
+</span>
+<span class="font-label-telemetry text-label-telemetry text-primary font-bold">LIVE</span>
+</div>
+<div>
+<div class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface leading-none">3</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate mt-1">Active Incoming</div>
+</div>
+</div>
+<!-- Urgent / Action Required Stat -->
+<div class="bg-surface-container p-3 rounded-xl flex flex-col justify-between gap-1 shadow-sm relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-12 h-12 rounded-full bg-tertiary/10 blur-xl"></div>
+<div class="flex items-center justify-between">
+<span class="w-6 h-6 rounded-md bg-tertiary/15 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[16px]">draw</span>
+</span>
+<span class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_6px_rgba(255,185,95,0.8)]"></span>
+</div>
+<div>
+<div class="font-headline-xl-mobile text-headline-xl-mobile text-tertiary leading-none">1</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate mt-1">Sign Needed</div>
+</div>
+</div>
+<!-- Delivered Monthly Summary -->
+<div class="bg-surface-container p-3 rounded-xl flex flex-col justify-between gap-1 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="w-6 h-6 rounded-md bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[16px]">task_alt</span>
+</span>
+<span class="material-symbols-outlined text-[16px] text-outline">trending_up</span>
+</div>
+<div>
+<div class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface leading-none">14</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate mt-1">Past 30 Days</div>
+</div>
+</div>
+</section>
+<!-- Recent & Upcoming Deliveries Stream -->
+<section class="flex flex-col gap-space-sm pt-1">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<span class="font-headline-md text-headline-md text-on-surface">Deliveries Stream</span>
+<span class="bg-surface-container-high font-label-telemetry text-label-telemetry text-primary px-2 py-0.5 rounded-full">4 total</span>
+</div>
+<button class="font-label-caps text-label-caps text-primary hover:underline uppercase tracking-wider flex items-center" type="button">
+        History
+        <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<!-- Package 1: In Transit (Apple Studio Display) -->
+<div class="group relative bg-surface-container hover:bg-surface-container-high transition-colors p-3.5 rounded-xl shadow-sm flex flex-col gap-2.5">
+<div class="flex items-start gap-3">
+<div class="w-11 h-11 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[22px]">desktop_mac</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Apple Studio Display 27"</span>
+<span class="font-label-telemetry text-label-telemetry text-tertiary bg-tertiary/10 px-2 py-0.5 rounded-full shrink-0">Nov 14</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">DHL Express • Tracking #DHL-4091-893</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1 text-body-sm bg-surface-container-lowest/50 px-3 py-2 rounded-lg">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-primary">verified_user</span>
+<span class="font-body-sm text-body-sm text-on-surface">Customs Cleared • In Transit</span>
+</div>
+<span class="font-label-caps text-label-caps text-tertiary bg-tertiary/15 px-2 py-0.5 rounded uppercase font-semibold">Tomorrow</span>
+</div>
+</div>
+<!-- Package 2: Delivered Today (Nordic Wool Knit Sweater) -->
+<div class="group relative bg-surface-container hover:bg-surface-container-high transition-colors p-3.5 rounded-xl shadow-sm flex flex-col gap-2.5">
+<div class="flex items-start gap-3">
+<div class="w-11 h-11 rounded-lg bg-surface-container-lowest flex items-center justify-center text-secondary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[22px]">checkroom</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Nordic Wool Knit Sweater</span>
+<span class="flex items-center gap-1 font-label-telemetry text-label-telemetry text-secondary bg-secondary/10 px-2 py-0.5 rounded-full shrink-0">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+              Delivered
+            </span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">UPS Ground • Tracking #1Z-999AA1-02</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm bg-surface-container-lowest/50 px-3 py-2 rounded-lg">
+<div class="flex items-center gap-2 text-on-surface-variant min-w-0">
+<span class="material-symbols-outlined text-[18px] text-secondary">house</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Front Porch • Signed by Resident</span>
+</div>
+<span class="font-label-telemetry text-label-telemetry text-outline shrink-0">Today 10:15 AM</span>
+</div>
+</div>
+<!-- Package 3: Awaiting Pickup (Specialty Coffee Beans) -->
+<div class="group relative bg-surface-container hover:bg-surface-container-high transition-colors p-3.5 rounded-xl shadow-sm flex flex-col gap-2.5">
+<div class="flex items-start gap-3">
+<div class="w-11 h-11 rounded-lg bg-surface-container-lowest flex items-center justify-center text-outline shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[22px]">inventory_2</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Specialty Coffee Beans (2kg)</span>
+<span class="font-label-telemetry text-label-telemetry text-outline bg-surface-container-highest px-2 py-0.5 rounded-full shrink-0">Nov 16</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">USPS Priority • Tracking #9400-1112-99</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm bg-surface-container-lowest/50 px-3 py-2 rounded-lg">
+<div class="flex items-center gap-2 text-on-surface-variant min-w-0">
+<span class="material-symbols-outlined text-[18px] text-outline">hourglass_top</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Label Created • Awaiting Carrier Pickup</span>
+</div>
+<span class="font-label-caps text-label-caps text-primary hover:underline cursor-pointer">Details</span>
+</div>
+</div>
+</section>
+<!-- Interactive Floating Add Tracked Item Pill CTA -->
+<div class="sticky bottom-4 z-20 flex justify-center w-full px-space-md pointer-events-none mt-2">
+<button class="pointer-events-auto flex items-center gap-2 px-5 py-3 rounded-full bg-primary-container text-on-primary-container shadow-[0_8px_24px_rgba(77,142,255,0.45)] hover:bg-primary transition-all active:scale-95 group font-headline-sm text-headline-sm" id="add-package-btn" type="button">
+<span class="material-symbols-outlined text-[22px] transition-transform duration-300 group-hover:rotate-90">add_circle</span>
+<span>New Tracked Package</span>
+</button>
+</div>
+<!-- Notification Toast Modal (Hidden by Default) -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 bg-surface-bright/95 backdrop-blur-md px-4 py-2.5 rounded-full shadow-[0_8px_24px_rgba(0,0,0,0.8)] flex items-center gap-2 text-primary font-body-sm text-body-sm transition-all duration-300 opacity-0 -translate-y-4 pointer-events-none z-50" id="toast-notify">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span class="text-on-surface" id="toast-text">Tracking copied to clipboard!</span>
+</div>
+</div>
+<script>
+  (function() {
+    // Quick Copy Tracking Number Micro-Interaction
+    const copyBtn = document.getElementById('copy-trk-btn');
+    const toast = document.getElementById('toast-notify');
+    const toastText = document.getElementById('toast-text');
+
+    function showToast(message) {
+      if (!toast) return;
+      toastText.textContent = message;
+      toast.classList.remove('opacity-0', '-translate-y-4', 'pointer-events-none');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      setTimeout(() => {
+        toast.classList.add('opacity-0', '-translate-y-4', 'pointer-events-none');
+        toast.classList.remove('opacity-100', 'translate-y-0');
+      }, 2200);
+    }
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', () => {
+        navigator.clipboard?.writeText('TRK-9842-8810');
+        showToast('TRK-9842-8810 copied to clipboard');
+      });
+    }
+
+    // Interactive Search Input clear button
+    const searchInput = document.getElementById('tracking-search');
+    const clearBtn = document.getElementById('clear-btn');
+    const scanBtn = document.getElementById('scan-btn');
+
+    if (searchInput && clearBtn) {
+      searchInput.addEventListener('input', (e) => {
+        if (e.target.value.length > 0) {
+          clearBtn.classList.remove('hidden');
+          clearBtn.classList.add('flex');
+        } else {
+          clearBtn.classList.add('hidden');
+          clearBtn.classList.remove('flex');
+        }
+      });
+
+      clearBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        clearBtn.classList.add('hidden');
+        clearBtn.classList.remove('flex');
+        searchInput.focus();
+      });
+    }
+
+    if (scanBtn) {
+      scanBtn.addEventListener('click', () => {
+        showToast('Activating camera scanner...');
+      });
+    }
+
+    const addBtn = document.getElementById('add-package-btn');
+    if (addBtn) {
+      addBtn.addEventListener('click', () => {
+        searchInput?.focus();
+        showToast('Enter tracking number above');
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-low/85 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.5)]" data-active-classes="text-primary bg-primary/10 shadow-[0_0_12px_rgba(173,198,255,0.2)]"><div class="flex items-center justify-around h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center h-12 px-3 rounded-xl gap-0.5 transition-all text-primary bg-primary/10 shadow-[0_0_12px_rgba(173,198,255,0.2)]" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-label-sm">Home</span></a><a class="flex flex-col items-center justify-center h-12 px-3 rounded-xl gap-0.5 text-on-surface-variant transition-all" data-path="live-map" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-sm text-label-sm">Live Map</span></a><a class="flex flex-col items-center justify-center h-12 px-3 rounded-xl gap-0.5 text-on-surface-variant transition-all" data-path="shipments" href="#"><span class="material-symbols-outlined text-[22px]">local_shipping</span><span class="font-label-sm text-label-sm">Shipments</span></a><a class="flex flex-col items-center justify-center h-12 px-3 rounded-xl gap-0.5 text-on-surface-variant transition-all" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-sm text-label-sm">Profile</span></a></div></nav></body></html>
